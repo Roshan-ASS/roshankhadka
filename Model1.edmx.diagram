@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6f5b036e470c4c73a6777303b7782bd0" Name="Diagram1">
+        <EntityTypeShape EntityType="Roshan.BookshopModel.catageory" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Roshan.BookshopModel.order" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Roshan.BookshopModel.order_details" Width="1.5" PointX="5.25" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Roshan.BookshopModel.product" Width="1.5" PointX="3" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Roshan.BookshopModel.product_img" Width="1.5" PointX="5.25" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="Roshan.BookshopModel.user" Width="1.5" PointX="0.75" PointY="7.625" IsExpanded="true" />
+        <AssociationConnector Association="Roshan.BookshopModel.FK_product_catageory1" ManuallyRouted="false" />
+        <AssociationConnector Association="Roshan.BookshopModel.FK_order_details_order" ManuallyRouted="false" />
+        <AssociationConnector Association="Roshan.BookshopModel.FK_order_user" ManuallyRouted="false" />
+        <AssociationConnector Association="Roshan.BookshopModel.FK_order_details_product" ManuallyRouted="false" />
+        <AssociationConnector Association="Roshan.BookshopModel.FK_product_img_product" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

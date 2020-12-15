@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<style>
+    h1, h2, h3 {
+        background-color: lightgrey;
+        color: black;
+    }
+    
+    h1 {
+        background-color: lightskyblue;
+        color: white;
+    }
+</style>
+<div class="jumbotron">
+    <h1>welcome To Beady's Bookshop</h1>
+    <p class="lead">Beady's book shop is a web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+@{
+    Html.BeginForm("Index", "Home", FormMethod.Get);
+    <input type="text" title="search term" value="@ViewBag.serach_term" name="search_term" />
+    <input class="btn btn-success" type="submit" value="search" />
+}
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+  $( function() {
+    $( "#draggable" ).draggable();
+  } );
+</script>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Home Page</h2>
+        <p>
+            Beady’s Books is an established book store with ten retail outlets across Sydney, Sales have been declining of late and a recent customer survey has shown that the lack of an online shopping facility is one of the reasons for the decline.
+        </p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Features</h2>
+        <p>Beady's books shop provides different kind and lates book in the online store with free homw delivery.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Categories</h2>
+        <p>childrens,family, adult, thiller, action, movies, drama, so on with many others.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <img src="~/image/2.jpg" alt="Trulli" width="200" height="150">
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867"> Add to Cart &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Shop now pay later</h2>
+        <p>You can easily buy any book from our store with your choice and can pay in plan afterward within certain period of time.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <img src="~/image/1.jpg" alt="Trulli" width="200" height="150">
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867"> Add to Cart &raquo;</a></p>
+    </div>
+</div>
+
